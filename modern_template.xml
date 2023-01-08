@@ -1,5 +1,15 @@
-<?xml version="1.0"?>
-<t name="Modern Template" t-name="professional_templates.SO_1_document">
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+-		<odoo>
+
+
+-			<data>
+
+
+-			<template name="Modern Template" id="SO_1_document">
+
+
 						<!-- Multicompany -->
 						<t t-if="doc and 'company_id' in doc">
 								<t t-set="company" t-value="doc.sudo().company_id"></t>
@@ -104,5 +114,10 @@
 								<t t-call="professional_templates.company_footer"/>
 						</div>
 						<!--/FOOTER-->
-				</t>
 
+
+				</template>
+
+		</data>
+
+</odoo>
